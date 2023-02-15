@@ -11,10 +11,7 @@ class Number : public ASTNode {
         , val_(val) {}
 
     int value() const { return val_; }
-    ~Number()
-    {
-        ((ASTNode*)this)->~ASTNode();
-    }
+
 
   private:
     int val_;
