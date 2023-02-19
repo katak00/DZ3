@@ -12,6 +12,7 @@ public:
 
     std::string name() const { return var_; }
 
+
 private:
     std::string var_;
 };

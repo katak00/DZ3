@@ -13,6 +13,6 @@ int main() {
     ASTNode *ast = parser.parse();
     if (ast) {
          ast->print(std::cout);
-    }
+    };
     return 0;
 }
