@@ -20,6 +20,7 @@ void ASTNode::print(std::ostream &out) const { inner_print(out, 0); }
 void ASTNode::inner_print(std::ostream &out, size_t indent) const {
     if (lhs_) {
         lhs_->inner_print(out, indent + 1);
+
     }
     for (size_t i = 0; i < indent; ++i) {
         out << "    ";

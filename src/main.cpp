@@ -7,12 +7,13 @@
 #include "parser.hpp"
 
 int main() {
-    Lexer lexer(std::cin);
-    Parser parser(lexer);
+	Lexer lexer(std::cin);
+	Parser parser(lexer);
 
-    ASTNode *ast = parser.parse();
-    if (ast) {
-         ast->print(std::cout);
-    };
-    return 0;
+	ASTNode* ast = parser.parse();
+	if (ast) {
+		ast->print(std::cout);
+		delete(ast);
+	};
+	return 0;
 }

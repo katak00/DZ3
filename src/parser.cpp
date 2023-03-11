@@ -1,4 +1,5 @@
 #include "parser.hpp"
+
 #include "number.hpp"
 #include "variable.hpp"
 #include "operators/add.hpp"
@@ -61,7 +62,9 @@ ASTNode* Parser::term() {
 		}
 		default:
 			return root;
+
 		}
+
 	}
 }
 
